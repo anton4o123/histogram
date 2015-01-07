@@ -34,6 +34,7 @@ int main() {
 			if(surf_change) {
 				surf_change = false;
 				SDL_FillRect(screen, &screen->clip_rect, SDL_MapRGB(screen->format, 0xFF, 0xFF, 0xFF));
+				apply_surface(10, 10, for_rendering, screen, NULL);
 				open.show(false);
 				equalize.show(false);
 				save.show(false);

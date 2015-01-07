@@ -43,6 +43,7 @@ void Button::handle_events() {
 		if((x > box.x) && (x < box.x + box.w) && (y > box.y) && (y < box.y + box.h)) {
 			if(name_ == "files/open") {
 				original = IMG_Load(take_path().c_str());
+				for_rendering = SDL_DisplayFormat(original);
 				surf_change = true;
 			}
 
