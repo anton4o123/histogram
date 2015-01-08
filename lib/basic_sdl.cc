@@ -76,7 +76,7 @@ string take_path() {
 					return string("");
 				}
 
-				if((event.key.keysym.unicode >= (Uint16)'0' && event.key.keysym.unicode <= (Uint16)'9') || (event.key.keysym.unicode >= (Uint16)'a' && event.key.keysym.unicode <= (Uint16)'z') || (event.key.keysym.unicode >= (Uint16)'A' && event.key.keysym.unicode <= (Uint16)'Z') || (event.key.keysym.unicode == (Uint16)'.')) {
+				if((event.key.keysym.unicode >= (Uint16)'0' && event.key.keysym.unicode <= (Uint16)'9') || (event.key.keysym.unicode >= (Uint16)'a' && event.key.keysym.unicode <= (Uint16)'z') || (event.key.keysym.unicode >= (Uint16)'A' && event.key.keysym.unicode <= (Uint16)'Z') || (event.key.keysym.unicode == (Uint16)'.') || (event.key.keysym.unicode == (Uint16)'/')) {
 					text_string += event.key.keysym.unicode;
 					change = true;
 				}
