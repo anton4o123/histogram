@@ -52,6 +52,7 @@ void Button::handle_events() {
 				original = equalize_histogram(original);
 				SDL_FreeSurface(for_rendering);
 				for_rendering = SDL_DisplayFormat(original);
+				for_rendering = rotozoomSurfaceXY(for_rendering, 0, 0.3, 0.3, 1);
 				surf_change = true;
 			}
 
