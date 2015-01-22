@@ -1,6 +1,7 @@
 #ifndef BUTTON_HH_
 #define BUTTON_HH_
 
+#include "SDL_rotozoom.h"
 #include "basic_sdl.hh"
 #include "equalize.hh"
 

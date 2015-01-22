@@ -44,6 +44,7 @@ void Button::handle_events() {
 			if(name_ == "files/open") {
 				original = IMG_Load(take_path().c_str());
 				for_rendering = SDL_DisplayFormat(original);
+				for_rendering = rotozoomSurfaceXY(for_rendering, 0, 0.3, 0.3, 1);
 				surf_change = true;
 			}
 
